@@ -12,7 +12,7 @@ NC='\033[0m' # No Color
 OS=$(lsb_release -d | awk -F"\t" '{print $2}')
 RAM=$(free -m | awk 'NR==2{printf "%s MB", $2}')
 SWAP=$(free -m | awk 'NR==4{printf "%s MB", $2}')
-CITY="สิงคโปร์"  # Hardcoded or use an API to get this info
+CITY="Singapore"  # Hardcoded or use an API to get this info
 ISP="Google LLC"  # Example, change as necessary
 IP=$(curl -s ifconfig.me)
 DOMAIN="example.com"  # Replace with your domain
@@ -25,95 +25,95 @@ clear
 
 # Display header
 echo -e "${BLUE}╔═══════════════════════════════════════════════╗${NC}"
-echo -e "${BLUE}║${WHITE}             ระบบจัดการ VPN               ${BLUE}║${NC}"
+echo -e "${BLUE}║${WHITE}          หน่วยบ้าบิน VPN          ${BLUE}║${NC}"
 echo -e "${BLUE}╚═══════════════════════════════════════════════╝${NC}"
 
 # Display system information
 echo -e "${GREEN}╔═══════════════════════════════════════════════╗${NC}"
-echo -e "${GREEN}║${WHITE} ระบบปฏิบัติการ    : $OS                     ${GREEN}║${NC}"
-echo -e "${GREEN}║${WHITE} หน่วยความจำแรม    : $RAM                     ${GREEN}║${NC}"
-echo -e "${GREEN}║${WHITE} พื้นที่ Swap      : $SWAP                    ${GREEN}║${NC}"
-echo -e "${GREEN}║${WHITE} เมือง             : $CITY                  ${GREEN}║${NC}"
-echo -e "${GREEN}║${WHITE} ผู้ให้บริการอินเทอร์เน็ต : $ISP           ${GREEN}║${NC}"
-echo -e "${GREEN}║${WHITE} ไอพีแอดเดรส       : $IP                      ${GREEN}║${NC}"
-echo -e "${GREEN}║${WHITE} โดเมน            : $DOMAIN                ${GREEN}║${NC}"
-echo -e "${GREEN}║${WHITE} ระยะเวลาทำงาน    : $UPTIME                ${GREEN}║${NC}"
+echo -e "${GREEN}║${WHITE} OS             : $OS          ${GREEN}║${NC}"
+echo -e "${GREEN}║${WHITE} RAM            : $RAM         ${GREEN}║${NC}"
+echo -e "${GREEN}║${WHITE} SWAP           : $SWAP        ${GREEN}║${NC}"
+echo -e "${GREEN}║${WHITE} CITY           : $CITY        ${GREEN}║${NC}"
+echo -e "${GREEN}║${WHITE} ISP            : $ISP         ${GREEN}║${NC}"
+echo -e "${GREEN}║${WHITE} IP             : $IP          ${GREEN}║${NC}"
+echo -e "${GREEN}║${WHITE} DOMAIN         : $DOMAIN      ${GREEN}║${NC}"
+echo -e "${GREEN}║${WHITE} UPTIME         : $UPTIME      ${GREEN}║${NC}"
 echo -e "${GREEN}╚═══════════════════════════════════════════════╝${NC}"
 
 # Display status
 echo -e "${YELLOW}╔═══════════════════════════════════════════════╗${NC}"
-echo -e "${YELLOW}║${WHITE} XRAY : เปิด | SSH-WS : เปิด | NGINX : เปิด ${YELLOW}║${NC}"
+echo -e "${YELLOW} {WHITE} XRAY : ON | SSH-WS : ON | NGINX : O ${YELLOW}${NC}"
 echo -e "${YELLOW}╚═══════════════════════════════════════════════╝${NC}"
 
 # Display version and expiry information
 echo -e "${RED}╔═══════════════════════════════════════════════╗${NC}"
-echo -e "${RED}║${WHITE} เวอร์ชั่น       : 20.04 LTS         ${RED}║${NC}"
-echo -e "${RED}║${WHITE} ผู้พัฒนา      : เจฟ.เจฟ             ${RED}║${NC}"
-echo -e "${RED}║${WHITE} ชื่อผู้ใช้       :  VIP              ${RED}║${NC}"
-echo -e "${RED}║${WHITE} วันหมดอายุ    : ${RED}$EXPIRY_DAYS 200 วัน${NC}                ${RED}║${NC}"
+echo -e "${RED}║${WHITE} Version        : 20.04.         ${RED}║${NC}"
+echo -e "${RED}║${WHITE} Developer      : เจฟ.เจฟ         ${RED}║${NC}"
+echo -e "${RED}║${WHITE} Client Name    : VIP            ${RED}║${NC}"
+echo -e "${RED}║${WHITE} Expiry In      : ${RED}$EXPIRY_DAYS 200 Days${NC}              ${RED}║${NC}"
 echo -e "${RED}╚═══════════════════════════════════════════════╝${NC}"
 
 # Display menu options
 echo -e "${BLUE}╔═══════════════════════════════════════════════╗${NC}"
-echo -e "${BLUE}║${WHITE} 1.) สร้าง OPNE/SSH               ${BLUE}║${NC}"
-echo -e "${BLUE}║${WHITE} 2.) XRAY                                     ${BLUE}║${NC}"
-echo -e "${BLUE}║${WHITE} 3.) TROJAN                                   ${BLUE}║${NC}"
-echo -e "${BLUE}║${WHITE} 4.) ติดตั้งเว็บ                                 ${BLUE}║${NC}"
-echo -e "${BLUE}║${WHITE} 5.) รีบูท                                    ${BLUE}║${NC}"
-echo -e "${BLUE}║${WHITE} 6.) คุณสมบัติ                                ${BLUE}║${NC}"
-echo -e "${BLUE}║${WHITE} 7.) ใบรับรอง                                 ${BLUE}║${NC}"
-echo -e "${BLUE}║${WHITE} 8.) สำรองข้อมูล                              ${BLUE}║${NC}"
-echo -e "${BLUE}║${WHITE} 9.) กู้คืนข้อมูล                              ${BLUE}║${NC}"
-echo -e "${BLUE}║${WHITE} x.) ออกจากโปรแกรม                           ${BLUE}║${NC}"
+echo -e "${BLUE}║${WHITE} 1.) SSH/OPENVPN                ${BLUE}║${NC}"
+echo -e "${BLUE}║${WHITE} 2.) XRAY                       ${BLUE}║${NC}"
+echo -e "${BLUE}║${WHITE} 3.) TROJAN                     ${BLUE}║${NC}"
+echo -e "${BLUE}║${WHITE} 4.) SS-Libev                   ${BLUE}║${NC}"
+echo -e "${BLUE}║${WHITE} 5.) REBOOT                     ${BLUE}║${NC}"
+echo -e "${BLUE}║${WHITE} 6.) FEATURES                   ${BLUE}║${NC}"
+echo -e "${BLUE}║${WHITE} 7.) CERT                       ${BLUE}║${NC}"
+echo -e "${BLUE}║${WHITE} 8.) BACKUP                     ${BLUE}║${NC}"
+echo -e "${BLUE}║${WHITE} 9.) RESTORE                    ${BLUE}║${NC}"
+echo -e "${BLUE}║${WHITE} x.) EXIT                       ${BLUE}║${NC}"
 echo -e "${BLUE}╚═══════════════════════════════════════════════╝${NC}"
 
 # User input for menu selection
-echo -ne "${GREEN}เลือกเมนู : ${NC}"
+echo -ne "${GREEN}Select menu: ${NC}"
 read -r menu
 
 # Example action based on menu selection
 case $menu in
     1)
-        echo -e "${YELLOW}กำลังเปิด SSH/OPENVPN...${NC}"
+        echo -e "${YELLOW}Opening SSH/OPENVPN...${NC}"
         # Add command to launch SSH/OPENVPN
         ;;
     2)
-        echo -e "${YELLOW}กำลังเปิด XRAY...${NC}"
+        echo -e "${YELLOW}Opening XRAY...${NC}"
         # Add command to launch XRAY
         ;;
     3)
-        echo -e "${YELLOW}กำลังเปิด TROJAN...${NC}"
+        echo -e "${YELLOW}Opening TROJAN...${NC}"
         # Add command to launch TROJAN
         ;;
     4)
-        echo -e "${YELLOW}กำลังเปิด SS-Libev...${NC}"
+        echo -e "${YELLOW}Opening SS-Libev...${NC}"
         # Add command to launch SS-Libev
         ;;
     5)
-        echo -e "${YELLOW}กำลังรีบูทระบบ...${NC}"
+        echo -e "${YELLOW}Rebooting system...${NC}"
         reboot
         ;;
     6)
-        echo -e "${YELLOW}แสดงคุณสมบัติ...${NC}"
+        echo -e "${YELLOW}Displaying features...${NC}"
         # Add command to show features
         ;;
     7)
-        echo -e "${YELLOW}จัดการใบรับรอง...${NC}"
+        echo -e "${YELLOW}Managing certificates...${NC}"
         # Add command for cert management
         ;;
     8)
-        echo -e "${YELLOW}กำลังสำรองข้อมูล...${NC}"
+        echo -e "${YELLOW}Backing up data...${NC}"
         # Add backup command
         ;;
     9)
-        echo -e "${YELLOW}กำลังกู้คืนข้อมูล...${NC}"
+        echo -e "${YELLOW}Restoring data...${NC}"
         # Add restore command
         ;;
     x)
-        echo -e "${YELLOW}กำลังออกจากโปรแกรม...${NC}"
+        echo -e "${YELLOW}Exiting...${NC}"
         exit 0
         ;;
     *)
-        echo -e "${RED}เมนูที่เลือกไม่ถูกต้อง!${NC}"
+        echo -e "${RED}Invalid selection!${NC}"
         ;;
 esac
