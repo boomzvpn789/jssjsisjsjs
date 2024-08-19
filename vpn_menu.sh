@@ -50,7 +50,7 @@ echo -e "${RED}╔════════════════════�
 echo -e "${RED}║${WHITE} Version        : 20.04.         ${RED}║${NC}"
 echo -e "${RED}║${WHITE} Developer      : เจฟ.เจฟ         ${RED}║${NC}"
 echo -e "${RED}║${WHITE} Client Name    : VIP            ${RED}║${NC}"
-echo -e "${RED}║${WHITE} Expiry In      : ${RED}$EXPIRY_DAYS 200 Days${NC}              ${RED}║${NC}"
+echo -e "${RED}║${WHITE} Expiry In      : ${RED}$EXPIRY_DAYSDays${NC}              ${RED}║${NC}"
 echo -e "${RED}╚═══════════════════════════════════════════════╝${NC}"
 
 # Display menu options
