@@ -25,7 +25,7 @@ clear
 
 # Display header
 echo -e "${BLUE}╔═══════════════════════════════════════════════╗${NC}"
-echo -e "${BLUE}║${WHITE}          หน่วยบ้าบิน VPN          ${BLUE}║${NC}"
+echo -e "${BLUE} ${WHITE}          หน่วยม้าบิน VPN          ${BLUE} ${NC}"
 echo -e "${BLUE}╚═══════════════════════════════════════════════╝${NC}"
 
 # Display system information
@@ -47,10 +47,10 @@ echo -e "${YELLOW}╚═══════════════════�
 
 # Display version and expiry information
 echo -e "${RED}╔═══════════════════════════════════════════════╗${NC}"
-echo -e "${RED} ${WHITE} Version        : 20.04.         ${RED} ${NC}"
+echo -e "${RED} ${WHITE} Version        : 20.04         ${RED} ${NC}"
 echo -e "${RED} ${WHITE} Developer      : เจฟ.เจฟ         ${RED} ${NC}"
 echo -e "${RED} ${WHITE} Client Name    : VIP            ${RED} ${NC}"
-echo -e "${RED} ${WHITE} Expiry In      : ${RED}$EXPIRY_DAYSDays${NC}              ${RED}║${NC}"
+echo -e "${RED} ${WHITE} Expiry In      : 200 วัน         ${RED} ${NC}"
 echo -e "${RED}╚═══════════════════════════════════════════════╝${NC}"
 
 # Display menu options
