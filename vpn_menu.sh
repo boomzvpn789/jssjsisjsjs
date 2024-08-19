@@ -15,7 +15,7 @@ SWAP=$(free -m | awk 'NR==4{printf "%s MB", $2}')
 CITY="Singapore"  # Hardcoded or use an API to get this info
 ISP="Google LLC"  # Example, change as necessary
 IP=$(curl -s ifconfig.me)
-DOMAIN="example.com"  # Replace with your domain
+DOMAIN="th777.boomzvpn.cloud"  # Replace with your domain
 UPTIME=$(uptime -p | cut -d " " -f 2-)
 
 # Define the expiry
@@ -25,7 +25,7 @@ clear
 
 # Display header
 echo -e "${BLUE}╔═══════════════════════════════════════════════╗${NC}"
-echo -e "${BLUE} ${WHITE}          หน่วยม้าบิน VPN          ${BLUE} ${NC}"
+echo -e "${BLUE} ${WHITE}             หน่วยม้าบิน VPN          ${BLUE} ${NC}"
 echo -e "${BLUE}╚═══════════════════════════════════════════════╝${NC}"
 
 # Display system information
@@ -47,7 +47,7 @@ echo -e "${YELLOW}╚═══════════════════�
 
 # Display version and expiry information
 echo -e "${RED}╔═══════════════════════════════════════════════╗${NC}"
-echo -e "${RED} ${WHITE} Version        : 20.04         ${RED} ${NC}"
+echo -e "${RED} ${WHITE} Version        : 20.04 TLS        ${RED} ${NC}"
 echo -e "${RED} ${WHITE} Developer      : เจฟ.เจฟ         ${RED} ${NC}"
 echo -e "${RED} ${WHITE} Client Name    : VIP            ${RED} ${NC}"
 echo -e "${RED} ${WHITE} Expiry In      : 200 วัน         ${RED} ${NC}"
@@ -55,15 +55,12 @@ echo -e "${RED}╚════════════════════�
 
 # Display menu options
 echo -e "${BLUE}╔═══════════════════════════════════════════════╗${NC}"
-echo -e "${BLUE}║${WHITE} 1.) SSH/OPENVPN                ${BLUE} ${NC}"
-echo -e "${BLUE}║${WHITE} 2.) XRAY                       ${BLUE} ${NC}"
-echo -e "${BLUE}║${WHITE} 3.) TROJAN                     ${BLUE} ${NC}"
-echo -e "${BLUE}║${WHITE} 4.) SS-Libev                   ${BLUE} ${NC}"
-echo -e "${BLUE}║${WHITE} 5.) REBOOT                     ${BLUE} ${NC}"
-echo -e "${BLUE}║${WHITE} 6.) FEATURES                   ${BLUE} ${NC}"
-echo -e "${BLUE}║${WHITE} 7.) CERT                       ${BLUE} ${NC}"
-echo -e "${BLUE}║${WHITE} 8.) BACKUP                     ${BLUE} ${NC}"
-echo -e "${BLUE}║${WHITE} 9.) RESTORE                    ${BLUE} ${NC}"
+echo -e "${BLUE}║${WHITE} 1.) สร้าง SSH                ${BLUE} ${NC}"
+echo -e "${BLUE}║${WHITE} 2.) สร้าง V2RAY                       ${BLUE} ${NC}"
+echo -e "${BLUE}║${WHITE} 3.) สร้าง slow dns                     ${BLUE} ${NC}"
+echo -e "${BLUE}║${WHITE} 4.) ระบบติดตั้ง เว็บ                   ${BLUE} ${NC}"
+echo -e "${BLUE}║${WHITE} 5.) สร้าง บอท                     ${BLUE} ${NC}"
+echo -e "${BLUE}║${WHITE} 9.) เช็คคนออนไลน์ ผ่านเว็บ                    ${BLUE} ${NC}"
 echo -e "${BLUE}║${WHITE} x.) EXIT                       ${BLUE} ${NC}"
 echo -e "${BLUE}╚═══════════════════════════════════════════════╝${NC}"
 
