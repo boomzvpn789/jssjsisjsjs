@@ -35,14 +35,14 @@ echo -e "${GREEN}║${WHITE} RAM            : $RAM         ${GREEN} ${NC}"
 echo -e "${GREEN}║${WHITE} SWAP           : $SWAP        ${GREEN} ${NC}"
 echo -e "${GREEN}║${WHITE} CITY           : $CITY        ${GREEN} ${NC}"
 echo -e "${GREEN}║${WHITE} ISP            : $ISP         ${GREEN} ${NC}"
-echo -e "${GREEN}║${WHITE} IP             : $IP          ${GREEN} ${NC}"
-echo -e "${GREEN}║${WHITE} DOMAIN         : $DOMAIN      ${GREEN} ${NC}"
+echo -e "${GREEN}║${WHITE} ไอพี             : $IP          ${GREEN} ${NC}"
+echo -e "${GREEN}║${WHITE} โดเมน         : $DOMAIN      ${GREEN} ${NC}"
 echo -e "${GREEN}║${WHITE} UPTIME         : $UPTIME      ${GREEN} ${NC}"
 echo -e "${GREEN}╚═══════════════════════════════════════════════╝${NC}"
 
 # Display status
 echo -e "${YELLOW}╔═══════════════════════════════════════════════╗${NC}"
-echo -e "${YELLOW}       XRAY : ON | SSH-WS : ON | NGINX : O ${YELLOW}${NC}"
+echo -e "${YELLOW}       XRAY : ON | SSH-WS : ON | NGINX : ON ${YELLOW}${NC}"
 echo -e "${YELLOW}╚═══════════════════════════════════════════════╝${NC}"
 
 # Display version and expiry information
