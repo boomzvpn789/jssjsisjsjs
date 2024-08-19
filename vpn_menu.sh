@@ -30,14 +30,14 @@ echo -e "${BLUE}╚════════════════════�
 
 # Display system information
 echo -e "${GREEN}╔═══════════════════════════════════════════════╗${NC}"
-echo -e "${GREEN}║${WHITE} OS             : $OS          ${GREEN}║${NC}"
-echo -e "${GREEN}║${WHITE} RAM            : $RAM         ${GREEN}║${NC}"
-echo -e "${GREEN}║${WHITE} SWAP           : $SWAP        ${GREEN}║${NC}"
-echo -e "${GREEN}║${WHITE} CITY           : $CITY        ${GREEN}║${NC}"
-echo -e "${GREEN}║${WHITE} ISP            : $ISP         ${GREEN}║${NC}"
-echo -e "${GREEN}║${WHITE} IP             : $IP          ${GREEN}║${NC}"
-echo -e "${GREEN}║${WHITE} DOMAIN         : $DOMAIN      ${GREEN}║${NC}"
-echo -e "${GREEN}║${WHITE} UPTIME         : $UPTIME      ${GREEN}║${NC}"
+echo -e "${GREEN}║${WHITE} OS             : $OS          ${GREEN} ${NC}"
+echo -e "${GREEN}║${WHITE} RAM            : $RAM         ${GREEN} ${NC}"
+echo -e "${GREEN}║${WHITE} SWAP           : $SWAP        ${GREEN} ${NC}"
+echo -e "${GREEN}║${WHITE} CITY           : $CITY        ${GREEN} ${NC}"
+echo -e "${GREEN}║${WHITE} ISP            : $ISP         ${GREEN} ${NC}"
+echo -e "${GREEN}║${WHITE} IP             : $IP          ${GREEN} ${NC}"
+echo -e "${GREEN}║${WHITE} DOMAIN         : $DOMAIN      ${GREEN} ${NC}"
+echo -e "${GREEN}║${WHITE} UPTIME         : $UPTIME      ${GREEN} ${NC}"
 echo -e "${GREEN}╚═══════════════════════════════════════════════╝${NC}"
 
 # Display status
@@ -47,24 +47,24 @@ echo -e "${YELLOW}╚═══════════════════�
 
 # Display version and expiry information
 echo -e "${RED}╔═══════════════════════════════════════════════╗${NC}"
-echo -e "${RED}║${WHITE} Version        : 20.04.         ${RED}║${NC}"
-echo -e "${RED}║${WHITE} Developer      : เจฟ.เจฟ         ${RED}║${NC}"
-echo -e "${RED}║${WHITE} Client Name    : VIP            ${RED}║${NC}"
-echo -e "${RED}║${WHITE} Expiry In      : ${RED}$EXPIRY_DAYSDays${NC}              ${RED}║${NC}"
+echo -e "${RED} ${WHITE} Version        : 20.04.         ${RED} ${NC}"
+echo -e "${RED} ${WHITE} Developer      : เจฟ.เจฟ         ${RED} ${NC}"
+echo -e "${RED} ${WHITE} Client Name    : VIP            ${RED} ${NC}"
+echo -e "${RED} ${WHITE} Expiry In      : ${RED}$EXPIRY_DAYSDays${NC}              ${RED}║${NC}"
 echo -e "${RED}╚═══════════════════════════════════════════════╝${NC}"
 
 # Display menu options
 echo -e "${BLUE}╔═══════════════════════════════════════════════╗${NC}"
-echo -e "${BLUE}║${WHITE} 1.) SSH/OPENVPN                ${BLUE}║${NC}"
-echo -e "${BLUE}║${WHITE} 2.) XRAY                       ${BLUE}║${NC}"
-echo -e "${BLUE}║${WHITE} 3.) TROJAN                     ${BLUE}║${NC}"
-echo -e "${BLUE}║${WHITE} 4.) SS-Libev                   ${BLUE}║${NC}"
-echo -e "${BLUE}║${WHITE} 5.) REBOOT                     ${BLUE}║${NC}"
-echo -e "${BLUE}║${WHITE} 6.) FEATURES                   ${BLUE}║${NC}"
-echo -e "${BLUE}║${WHITE} 7.) CERT                       ${BLUE}║${NC}"
-echo -e "${BLUE}║${WHITE} 8.) BACKUP                     ${BLUE}║${NC}"
-echo -e "${BLUE}║${WHITE} 9.) RESTORE                    ${BLUE}║${NC}"
-echo -e "${BLUE}║${WHITE} x.) EXIT                       ${BLUE}║${NC}"
+echo -e "${BLUE}║${WHITE} 1.) SSH/OPENVPN                ${BLUE} ${NC}"
+echo -e "${BLUE}║${WHITE} 2.) XRAY                       ${BLUE} ${NC}"
+echo -e "${BLUE}║${WHITE} 3.) TROJAN                     ${BLUE} ${NC}"
+echo -e "${BLUE}║${WHITE} 4.) SS-Libev                   ${BLUE} ${NC}"
+echo -e "${BLUE}║${WHITE} 5.) REBOOT                     ${BLUE} ${NC}"
+echo -e "${BLUE}║${WHITE} 6.) FEATURES                   ${BLUE} ${NC}"
+echo -e "${BLUE}║${WHITE} 7.) CERT                       ${BLUE} ${NC}"
+echo -e "${BLUE}║${WHITE} 8.) BACKUP                     ${BLUE} ${NC}"
+echo -e "${BLUE}║${WHITE} 9.) RESTORE                    ${BLUE} ${NC}"
+echo -e "${BLUE}║${WHITE} x.) EXIT                       ${BLUE} ${NC}"
 echo -e "${BLUE}╚═══════════════════════════════════════════════╝${NC}"
 
 # User input for menu selection
