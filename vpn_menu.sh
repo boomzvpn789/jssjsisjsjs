@@ -42,7 +42,7 @@ echo -e "${GREEN}╚════════════════════
 
 # Display status
 echo -e "${YELLOW}╔═══════════════════════════════════════════════╗${NC}"
-echo -e "${YELLOW} {WHITE} XRAY : ON | SSH-WS : ON | NGINX : O ${YELLOW}${NC}"
+echo -e "${YELLOW}       XRAY : ON | SSH-WS : ON | NGINX : O ${YELLOW}${NC}"
 echo -e "${YELLOW}╚═══════════════════════════════════════════════╝${NC}"
 
 # Display version and expiry information
